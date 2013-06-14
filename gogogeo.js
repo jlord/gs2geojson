@@ -14,10 +14,21 @@ function getData(req, res) {
     Tabletop.init(options)
 }
 
+function buildInfoObject(data, lineItem) {
+  var newObj = {}
+  data.forEach(function(obj) {
+    for(var key in obj) {
+      newObj[key] = lineItem[key]
+    }
+  })
+  return newObj
+}
+
 function createGeoJSON(data, tabletop) {
   console.log("gonna write geoJSON now")
   var geoJSON = []
   data.forEach(function(lineItem) {
+    var otherInfo = buildInfoObject(data, lineItem)
     var feature = {
       type: 'Feature',
       "geometry": { "type": "Point", "coordinates": [lineItem.long, lineItem.lat]},
@@ -25,11 +36,12 @@ function createGeoJSON(data, tabletop) {
         "marker-size": "small",
         "marker-color": lineItem.hexcolor,
         "location": lineItem.long + ", " + lineItem.lat
-      }
+      },
+      "info": otherInfo
     }
     geoJSON.push(feature)
   })
-  fs.writeFile(KEY +'.geojson', JSON.stringify(geoJSON))
+  fs.writeFile(KEY +'.geojson', JSON.stringify(geoJSON, null, '\t'))
   console.log("donezo")
 }
   
