@@ -6,23 +6,26 @@ This is a super simple [node.js](http://www.nodejs.org) sript that fetches your 
 
 ### Make a Spreadsheet
 
-1. Your spreadsheet should have a _lat_ column and _long_ column. You can do it [manually](http://www.latlong.net/) or use this [Mapbox Plugin] (or use a Geocoder).
+![spreadsheet](http://cl.ly/image/0G2l322I3R0E/Screen%20Shot%202013-06-14%20at%2012.03.22%20AM.png)
+
+1. Your spreadsheet should have a _lat_ column and _long_ column. You can do it [manually](http://www.latlong.net/) or use this [Mapbox Plugin](http://mapbox.com/tilemill/docs/guides/google-docs/#geocoding) (or use a Geocoder).
 2. It should also have a colum _hexcolor_ that has hexvalues that will be come the marker color.
 3. Click `File` > `Publish to the Web` > `Start Publishing`. Copy the key generated between the **=** and **&**:
 
-![sheetsee](https://raw.github.com/jllord/sheetsee-cache/master/img/key.png)
+![get spreadsheet key](https://raw.github.com/jllord/sheetsee-cache/master/img/key.png)
 
 ### Fork and Clone
 
 1. Click `Fork`
-2. Clone to your computer
+2. Clone to your computer `git clone https://github.com/jlord/make-geoJSON.git`
+3. Navigate into the folder `cd make-geoJSON`
 
 ### Add Your Key and Run
 
 _You'll need Node.js installed on your computer for this_
 
-1. Open the `gogogeo.js` file and replace line 9 with your spreadsheets key.
-2. In your Terminal:
+1. Open the `gogogeo.js` file and replace **line 9** with your spreadsheet's key.
+2. In your Terminal type:
 
 ```javascript
 npm install
