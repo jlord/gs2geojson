@@ -14,29 +14,28 @@ function getData(req, res) {
     Tabletop.init(options)
 }
 
-function buildInfoObject(data, lineItem) {
-  var newObj = {}
+function buildProperties(data, lineItem) {
+  var properties = {
+      "marker-size": "small",
+      "marker-color": lineItem.hexcolor
+  }
   data.forEach(function(obj) {
     for(var key in obj) {
-      newObj[key] = lineItem[key]
+      properties[key] = lineItem[key]
     }
   })
-  return newObj
+  return properties
 }
 
 function createGeoJSON(data, tabletop) {
   console.log("gonna write geoJSON now")
   var geoJSON = []
   data.forEach(function(lineItem) {
-    var otherInfo = buildInfoObject(data, lineItem)
+    var properties = buildProperties(data, lineItem)
     var feature = {
       type: 'Feature',
       "geometry": { "type": "Point", "coordinates": [lineItem.long, lineItem.lat]},
-      "properties": {
-        "marker-size": "small",
-        "marker-color": lineItem.hexcolor,
-        "info": otherInfo
-      }
+      "properties": properties
     }
     geoJSON.push(feature)
   })
