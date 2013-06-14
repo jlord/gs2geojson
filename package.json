@@ -1,0 +1,23 @@
+{
+  "name": "sheetsee-maplist",
+  "version": "0.0.0",
+  "description": "cache google spreadsheet data, draw map and render external tooltips for markers",
+  "main": "index.js",
+  "scripts": {
+    "start": "browservefy test.js"
+  },
+  "repository": "",
+  "keywords": [
+    "sheetsee",
+    "map"
+  ],
+  "author": "jllord",
+  "license": "BSD",
+  "devDependencies": {
+    "browserify": "~2.7.2"
+  },
+  "dependencies": {
+    "tabletop": "1.3.1",
+    "read-json": "0.0.0"
+  }
+}
