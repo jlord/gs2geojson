@@ -23,7 +23,7 @@ function createGeoJSON(data, tabletop) {
       "properties": {
         "marker-size": "small",
         "marker-color": lineItem.hexcolor,
-        "title": ""
+        "title": lineItem.long + "," + lineItem.lat
       }
     }
     geoJSON.push(feature)
