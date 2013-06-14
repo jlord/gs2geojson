@@ -1,15 +1,16 @@
 # Make geoJSON
 
-More specifically, make geoJSON from a Google Spreadsheet because you can view that in a beautiful [Mapbox](http://www.mapbox.com) map on [GitHub](https://github.com/blog/1528-there-s-a-map-for-that). YEAH!
+More specifically, make geoJSON from a Google spreadsheet because you can view that in a beautiful [Mapbox](http://www.mapbox.com) map on [GitHub](https://github.com/blog/1528-there-s-a-map-for-that). YEAH!
 
 This is a super simple [node.js](http://www.nodejs.org) sript that fetches your data from Google Spreadsheets and re-writes it as a geoJSON file. When you push the repo to GitHub after running the script, you have a geoJSON file you can click on see in lovely map form.
 
 #### Quick How
 
 1. Fork and Clone
-2. Replace gogogeo.js line 9 with your Published Google Spreadsheet's key
-3. `npm install` and `node gogogeo.js`
-4. Push to GitHub
+2. Have a Google Spreadsheet with lat, long and hexcolor columns
+3. Replace _gogogeo.js line 9_ with your Published Google spreadsheet's key
+4. `npm install` and `node gogogeo.js`
+5. Push to GitHub
 
 ## Long How
 
