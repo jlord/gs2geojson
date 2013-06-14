@@ -7,10 +7,9 @@ This is a super simple [node.js](http://www.nodejs.org) sript that fetches your 
 #### Quick How
 
 1. Fork and Clone
-2. Have a Google Spreadsheet with lat, long and hexcolor columns
-3. Replace _gogogeo.js line 9_ with your Published Google spreadsheet's key
-4. `npm install` and `node gogogeo.js`
-5. Push to GitHub
+2. Have a Google Spreadsheet with lat, long and hexcolor columns, publish spreadsheet, copy key
+3. `npm install` and `node gogogeo.js YourSpreadSheetKeyHere`
+4. Push to GitHub
 
 ## Long How
 
@@ -28,18 +27,16 @@ This is a super simple [node.js](http://www.nodejs.org) sript that fetches your 
 
 1. Click `Fork`
 2. Clone to your computer `git clone https://github.com/jlord/make-geoJSON.git`
-3. Navigate into the folder `cd make-geoJSON`
 
 ### Add Your Key and Run
 
 _You'll need Node.js installed on your computer for this_
 
-1. Open the `gogogeo.js` file and replace **line 9** with your spreadsheet's key.
-2. In your Terminal type:
+1. In your Terminal type:
 
 ```javascript
 npm install
-node gogogeo.js
+node gogogeo.js YourSpreadSheetKeyHere
 ```
 
 ### Push to GitHub and View

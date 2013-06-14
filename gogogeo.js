@@ -2,9 +2,10 @@ var fs = require('fs')
 var Tabletop = require('tabletop')
 
 var sheetData = []
-var KEY = '0Ao5u1U6KYND7dGN5QngweVJUWE16bTRob0d2a3dCbnc'
+var KEY = process.argv.slice(2)[0].toString()
 
 function getData(req, res) {
+
   function tabletopCb(data, tabletop){
     createGeoJSON(data, tabletop)
   }
