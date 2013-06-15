@@ -15,6 +15,7 @@ function getData(req, res) {
 }
 
 function buildProperties(data, lineItem) {
+  if (!lineItem.hexcolor) lineItem.hexcolor = "#0077C7"
   var properties = {
       "marker-size": "small",
       "marker-color": lineItem.hexcolor

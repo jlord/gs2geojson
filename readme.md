@@ -6,10 +6,10 @@ This is a super simple [node.js](http://www.nodejs.org) sript that fetches your 
 
 #### Quick How
 
-1. Fork and Clone
-2. Have a Google Spreadsheet with lat, long and hexcolor columns, publish spreadsheet, copy key
+1. Fork and Clone.
+2. Have a Google Spreadsheet with lat, long columns and if you want, a hexcolor column. Publish spreadsheet, copy key.
 3. `npm install` and `node gogogeo.js YourSpreadSheetKeyHere`
-4. Push to GitHub
+4. Push to GitHub.
 
 ## Long How
 
@@ -18,7 +18,7 @@ This is a super simple [node.js](http://www.nodejs.org) sript that fetches your 
 ![spreadsheet](http://cl.ly/image/0G2l322I3R0E/Screen%20Shot%202013-06-14%20at%2012.03.22%20AM.png)
 
 1. Your spreadsheet should have a _lat_ column and _long_ column. You can do it [manually](http://www.latlong.net/) or use this [Mapbox Plugin](http://mapbox.com/tilemill/docs/guides/google-docs/#geocoding) (or use a Geocoder).
-2. It should also have a colum _hexcolor_ that has hexvalues that will be come the marker color.
+2. If you want to pick your own markers colors, and a column titled _hexcolor_ with the hexcolor values you want.
 3. Click `File` > `Publish to the Web` > `Start Publishing`. Copy the key generated between the **=** and **&**:
 
 ![get spreadsheet key](https://raw.github.com/jllord/sheetsee-cache/master/img/key.png)
