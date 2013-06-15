@@ -18,7 +18,7 @@ This is a super simple [node.js](http://www.nodejs.org) sript that fetches your 
 ![spreadsheet](http://cl.ly/image/0G2l322I3R0E/Screen%20Shot%202013-06-14%20at%2012.03.22%20AM.png)
 
 1. Your spreadsheet should have a _lat_ column and _long_ column. You can do it [manually](http://www.latlong.net/) or use this [Mapbox Plugin](http://mapbox.com/tilemill/docs/guides/google-docs/#geocoding) (or use a Geocoder).
-2. If you want to pick your own markers colors, and a column titled _hexcolor_ with the hexcolor values you want.
+2. If you want to pick your own markers colors, and a column titled _hexcolor_ with the hexcolor values you want. They default to all blue.
 3. Click `File` > `Publish to the Web` > `Start Publishing`. Copy the key generated between the **=** and **&**:
 
 ![get spreadsheet key](https://raw.github.com/jllord/sheetsee-cache/master/img/key.png)
