@@ -2,7 +2,7 @@
 
 More specifically, make geoJSON from a Google spreadsheet because you can view that in a beautiful [Mapbox](http://www.mapbox.com) map on [GitHub](https://github.com/blog/1528-there-s-a-map-for-that). YEAH!
 
-This is a super simple [node.js](http://www.nodejs.org) sript that fetches your data from Google Spreadsheets and re-writes it as a geoJSON file. When you push the repo to GitHub after running the script, you have a geoJSON file you can click on see in lovely map form.
+This is a super simple [node.js](http://www.nodejs.org) script that fetches your data from Google Spreadsheets and re-writes it as a geoJSON file. When you push the repo to GitHub after running the script, you have a geoJSON file you can click on see in lovely map form.
 
 #### Quick How
 
