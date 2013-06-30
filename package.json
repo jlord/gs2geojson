@@ -1,17 +1,24 @@
 {
   "name": "make-geoJSON",
   "version": "0.0.0",
-  "description": "simple geoJSON generator",
-  "main": "index.js",
+  "description": "simple google spreadsheet to geoJSON converter",
+  "main": "gogogeo.js",
   "scripts": {
     "start": "node gogogeo.js"
   },
-  "repository": "",
+  "bin": {
+    "gogogeo": "bin.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jlord/make-geoJSON.git"
+  },
   "keywords": [
     "geojson",
-    "map"
+    "map",
+    "google spreadsheet"
   ],
-  "author": "jllord",
+  "author": "jlord",
   "license": "BSD",
   "dependencies": {
     "tabletop": "1.3.1"
