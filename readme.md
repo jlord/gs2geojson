@@ -2,7 +2,7 @@
 
 More specifically, make geoJSON from a Google spreadsheet because you can view that in a beautiful [Mapbox](http://www.mapbox.com) map on [GitHub](https://github.com/blog/1528-there-s-a-map-for-that). YEAH!
 
-This is a **super simple [node.js](http://www.nodejs.org) command line tool** (on [NPM](https://npmjs.org/package/gs2geojson)) that fetches your data from Google Spreadsheets and transforms it to geoJSON with the option to write it to a file. When you push the file to GitHub after running the script, you can view it in your repo as a lovely map!
+This is a **super simple [node.js](http://www.nodejs.org) command line tool** ([NPM](https://npmjs.org/package/gs2geojson)) that fetches your data from Google Spreadsheets and transforms it to geoJSON with the option to write it to a file. When you push the file to GitHub after running the script, you can view it in your repo as a lovely map!
 
 #### Quick How
 
@@ -35,7 +35,7 @@ _See directly below if you want to know more about getting lat and long_
 
 1. In your Terminal type `gogogeo YOURSPREADSHEETKEY`
  * If you want to save the spreadsheet as a geojson file in the directory you're in type `gogogeo YOURSPREADSHEETKEY --save`
- * To pipe the data to you clipboard to paste somewhere else type:  `gogogeo YOURSPREADSHEETKEY | pbcopy`
+ * To pipe the data to you clipboard to paste somewhere else type `gogogeo YOURSPREADSHEETKEY | pbcopy`
 
 
 ### Push to GitHub and View
