@@ -2,14 +2,14 @@
 
 More specifically, make geoJSON from a Google spreadsheet because you can view that in a beautiful [Mapbox](http://www.mapbox.com) map on [GitHub](https://github.com/blog/1528-there-s-a-map-for-that). YEAH!
 
-This is a super simple [node.js](http://www.nodejs.org) sript that fetches your data from Google Spreadsheets and re-writes it as a geoJSON file. When you push the repo to GitHub after running the script, you have a geoJSON file you can click on see in lovely map form.
+This is a super simple [node.js](http://www.nodejs.org) command line tool (on [NPM](https://npmjs.org/package/gs2geojson))that fetches your data from Google Spreadsheets and re-writes it as a geoJSON with the option to write it to a file. When you push the file to GitHub after running the script, you can view it in your repo as a lovely map!
 
 #### Quick How
 
-1. Fork and Clone.
+1. `npm install -g gs2geojson`
 2. Have a Google Spreadsheet with lat, long columns and if you want, a hexcolor column. Publish spreadsheet, copy key.
-3. `npm install` and `node gogogeo.js YourSpreadSheetKeyHere`
-4. Push to GitHub.
+3. `gogogeo YOURSPREADSHEETKEY`
+4. Use `gogogeo YOURSPREADSHEETKEY --save` to write it to a file to push to GitHub
 
 ## Long How
 
@@ -23,23 +23,20 @@ This is a super simple [node.js](http://www.nodejs.org) sript that fetches your 
 
 ![get spreadsheet key](https://raw.github.com/jllord/sheetsee-cache/master/img/key.png)
 
-### Fork and Clone
+### Node and NPM
 
-1. Click `Fork`
-2. Clone to your computer `git clone https://github.com/jlord/make-geoJSON.git`
+1. You'll need to have Node.js installed on your computer. Visit [nodejs.org](http://www.nodejs.org) to get it. 
+2. In your computer's Terminal, type `npm install -g gs2geojson` to install it as a global module. 
+3. To do a test, you can type `npm test` and it will run with a sample spreadsheet.
 
 ### Add Your Key and Run
 
-_You'll need Node.js installed on your computer for this_
+1. In your Terminal type `gogogeo YOURSPREADSHEETKEY`
+ * If you want to save the spreadsheet as a geojson file in the directory you're in type `gogogeo YOURSPREADSHEETKEY --save`
+ * To pipe the data to you clipboard to paste somewhere else type:  gogogeo YOURSPREADSHEETKEY | pbcopy`
 
-1. In your Terminal type:
-
-```javascript
-npm install
-node gogogeo.js YourSpreadSheetKeyHere
-```
 
 ### Push to GitHub and View
 
-1. Push it `git push origin master`
+1. Include it in a repo and push it to GitHub!
 2. Go look at it on the internet! 

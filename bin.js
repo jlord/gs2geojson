@@ -10,8 +10,7 @@ function writeFile(data) {
 }
 
 function returnData(data) { 
-  data = data
-  return data 
+  process.stdout.write(data)
 }
 
 if (args[1] === '--save') {
