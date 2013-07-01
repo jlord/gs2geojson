@@ -33,7 +33,7 @@ module.exports = function(KEY, cb) {
       var properties = buildProperties(data, lineItem)
       var feature = {
         type: 'Feature',
-        "geometry": { "type": "Point", "coordinates": [lineItem.long, lineItem.lat]},
+        "geometry": { "type": "Point", "coordinates": [+lineItem.long, +lineItem.lat]},
         "properties": properties
       }
       features.push(feature)
