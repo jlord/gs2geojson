@@ -28,7 +28,7 @@ module.exports = function(KEY, cb) {
   }
 
   function createGeoJSON(data, tabletop) {
-    var geoJSON = []
+    var features = []
     data.forEach(function(lineItem) {
       var properties = buildProperties(data, lineItem)
       var feature = {
@@ -36,9 +36,9 @@ module.exports = function(KEY, cb) {
         "geometry": { "type": "Point", "coordinates": [lineItem.long, lineItem.lat]},
         "properties": properties
       }
-      geoJSON.push(feature)
+      features.push(feature)
     })
-
+    var geoJSON = {"type": "FeatureCollection", "features": features}
     var geoJSONString = JSON.stringify(geoJSON, null, '\t')
     cb(geoJSONString) 
   }

@@ -1,13 +1,13 @@
 {
   "name": "gs2geojson",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "simple google spreadsheet to geoJSON converter",
   "main": "gogogeo.js",
   "scripts": {
     "test": "node bin.js 0Ao5u1U6KYND7dGN5QngweVJUWE16bTRob0d2a3dCbnc"
   },
   "bin": {
-    "gogogeo": "bin.js"
+    "gs2geojson": "bin.js"
   },
   "repository": {
     "type": "git",
