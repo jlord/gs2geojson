@@ -8,8 +8,8 @@ This is a **super simple [node.js](http://www.nodejs.org) command line tool** ([
 
 1. `npm install -g gs2geojson`
 2. Have a Google Spreadsheet with lat, long columns and if you want, a hexcolor column. Publish spreadsheet, copy key.
-3. `gogogeo YOURSPREADSHEETKEY`
-4. Use `gogogeo YOURSPREADSHEETKEY --save` to write it to a file to push to GitHub
+3. `gs2geojson YOURSPREADSHEETKEY`
+4. Use `gs2geojson YOURSPREADSHEETKEY --save` to write it to a file to push to GitHub
 
 _See directly below if you want to know more about getting lat and long_
 
@@ -35,9 +35,9 @@ _See directly below if you want to know more about getting lat and long_
 
 ### Add Your Key and Run
 
-1. In your Terminal type `gogogeo YOURSPREADSHEETKEY`
- * If you want to save the spreadsheet as a geojson file in the directory you're in type `gogogeo YOURSPREADSHEETKEY --save`
- * To pipe the data to you clipboard to paste somewhere else type `gogogeo YOURSPREADSHEETKEY | pbcopy`
+1. In your Terminal type `gs2geojson YOURSPREADSHEETKEY`
+ * If you want to save the spreadsheet as a geojson file in the directory you're in type `gs2geojson YOURSPREADSHEETKEY --save`
+ * To pipe the data to you clipboard to paste somewhere else type `gs2geojson YOURSPREADSHEETKEY | pbcopy`
 
 
 ### Push to GitHub and View
