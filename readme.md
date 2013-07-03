@@ -27,7 +27,7 @@ _See directly below if you want to know more about getting lat and long_
 
 ### Node and NPM
 
-1. You'll need to have [Node.js](http://www.nodejs.org) installed on your computer. 
+1. You'll need to have [Node.js](http://www.nodejs.org) (including [npm](https://npmjs.org/)) installed on your computer. See the “[Installation](https://github.com/joyent/node/wiki/Installation)” article in Node's wiki for details.
 2. In your computer's Terminal, type `npm install -g gs2geojson` to install it as a global module. 
 3. To do a test, you can type `npm test` and it will run with a sample spreadsheet.
 
