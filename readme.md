@@ -31,7 +31,9 @@ _See directly below if you want to know more about getting lat and long_
  - On Mac [installing the `.pkg`](http://nodejs.org/download/) gives you both Node and NPM. 
  - On Windows [installing the `.msi`](http://nodejs.org/download/) gives you both Node and NPM.
 2. In your computer's Terminal, type `npm install -g gs2geojson` to install it as a global module. 
-3. To do a test, you can type `npm test` and it will run with a sample spreadsheet.
+3. Here's an example you can try: `gs2geojson 0Ao5u1U6KYND7dGN5QngweVJUWE16bTRob0d2a3dCbnc --save`
+
+_Additionally, if you want to clone this repo, you can `cd gs2geojson` and run `npm install` then `npm test` to try it out._
 
 ### Add Your Key and Run
 
